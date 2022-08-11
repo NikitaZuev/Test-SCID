@@ -1,0 +1,268 @@
+$c-green: #00A76B
+$c-green-white: #00BB78
+a,button
+  text-decoration: none
+  cursor: url("../../img/Cursor.png"),auto
+header
+  display: flex
+  padding-bottom: 25px;
+  justify-content: space-between
+  background-color: #E2E3E5
+  .menu__items
+    display: flex
+    width: 100%
+    justify-content: space-between;
+    background-color: #FFF
+    padding: 24px 80px
+    .menu__links
+      display: flex
+      align-items: center;
+.btn
+  width: 100%
+  height: 50px
+  border: 1.5px solid #0E0E0F
+  border-radius: 30px
+  background-color: #0E0E0F
+  color: #fff
+  padding: 0 
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 12px 25px
+  transition: all .5s
+  &:hover
+    border: 1.5px solid $c-green-white
+    background-color: #fff
+    color: $c-green-white
+.hidden
+  display: none
+#navbar
+  display: flex
+  color: $c-green
+  .link_stars
+    display: flex
+    img
+      margin-right: 7px
+li
+  list-style-type: none
+  a
+    text-decoration: none
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #0E0E0F;
+    margin-right: 50px
+    transition: all .2s
+    &:hover
+      color: $c-green
+
+.swiper 
+  margin: 0;
+  width: 100%;
+  height: 720px;
+  padding-bottom: 50px!important
+.swipe1
+  background-image: url("../../img/Group 103.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+.swiper-slide
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  p 
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 87px;
+    width: 35%
+    color: #0E0E0F;
+    margin-left: 72px 
+    span
+      color: $c-green
+
+
+.swiper-slide img 
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+.swiper-pagination
+  .swiper-pagination-bullet
+    width: 10px;
+    height: 10px;
+    margin-right: 18px!important 
+    transition: all .5s
+  .swiper-pagination-bullet-active
+    background-color: $c-green
+    //border: 7px solid #FFF
+    box-shadow : 0 0 0 7px #FFF ,0 0 0 8px $c-green
+    
+
+.sevices__boxes
+  margin: 0 80px
+  .service__items
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between;
+    .service__item
+      padding: 24px
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+      border-radius: 20px;
+      width: 28%
+      margin-bottom: 30px
+      img
+        width: 100%
+      a
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        text-transform: capitalize;
+        color: #000000;
+        transition: all .2s
+        &:hover
+          color: $c-green
+  .btn__box
+    text-align: center
+    margin-bottom: 65px
+    button
+      width: 15%
+
+footer
+  padding: 60px 80px 16px 80px
+  background-color: $c-green
+  .footer__items
+    display: flex
+    justify-content: space-evenly;
+    margin-bottom: 70px
+    .img__footer
+      width: 108px;
+      height: 154px;
+      background: #009B63;
+      border-radius: 16px;
+      margin: auto 0;
+      img
+
+    p
+      margin: 0
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      font-feature-settings: 'salt' on, 'liga' off;
+      color: #FFF
+      margin-bottom: 25px
+    .link__footer
+      display: flex
+      align-items: center
+      color: #FFF
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: none
+      margin-bottom: 18px
+      img
+        margin-right: 8px
+    .any__social
+      width: 15%
+      .input__social
+        display: flex
+        input
+          background-color: $c-green-white
+          border: none
+          position: relative
+          width:  100%
+          height: 40px
+          margin-bottom: 50px
+          color: #FFF
+          padding-left: 12px 
+          border-radius: 8px 0 0 8px
+          &::-webkit-input-placeholder
+            color: #FFF
+          &:focus-visible
+            outline: none
+        button
+          background-color: $c-green-white
+          border: none
+          height: 42px
+          padding: 0
+          border-radius: 0 8px 8px 0
+          img
+            margin-right: 12px
+            padding-top: 5px;
+      img
+        margin-right: 16px
+      .social__inputbox
+  .copyright
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+    margin: 0
+
+@media screen and (max-width: 1024px)
+  .btn__box
+    button
+      width: 30%!important
+
+@media screen and (max-width: 910px)
+  .menu__items,.menu__links,#navbar,.footer__items
+    flex-wrap: wrap
+    align-items: center;
+    justify-content: center!important
+    button
+      width: 40%
+      margin-bottom: 10px
+  .menu__items
+    padding: 0!important
+  .swiper-slide p
+      font-size: 36px;
+      line-height: 60px;
+      width: auto
+  .service__item
+    width: auto!important
+  .btn__box
+    button
+      width: 30%!important
+  .w-100
+    width: 100%!important
+    text-align: center
+    margin-bottom: 10px
+    a
+      justify-content: center
+@media screen and (max-width: 520px)
+  li
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px
+    .link_stars
+      justify-content: center
+  .menu__links
+    button
+      width: 100%
+      height: auto
+      border-radius: 0
+  .sevices__boxes
+    margin: 0
+    text-align: center
+    .service__item
+      width: auto!important
+  .btn__box
+    button
+      width: 100%!important
+      border-radius: 0
+  footer
+    padding: 10px 0
+
+
